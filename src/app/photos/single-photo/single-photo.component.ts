@@ -39,7 +39,6 @@ export class SinglePhotoComponent implements OnInit, OnDestroy {
     this.sub = this.dataService.getSinglePhoto(id).subscribe((data: any) => {
       this.photo = data;
       this.loading = false;
-      console.log(this.photo);
     }, err => {
       this.loading = false;
       console.log(err);

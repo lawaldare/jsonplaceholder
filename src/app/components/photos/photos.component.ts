@@ -31,7 +31,6 @@ export class PhotosComponent implements OnInit, OnChanges {
   getAlbumPhotosByAlbumId(albumId: string) {
     this.dataService.getPhotosByAlbumId(albumId).subscribe((data: any) => {
       this.photos = data.slice(0, 4);
-      console.log(this.photos);
     })
   }
 
