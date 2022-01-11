@@ -15,14 +15,13 @@
 
 
   <div class="photos">
-    <div class="photos__box" *ngFor="let photo of filteredPhotos | paginate: { itemsPerPage: 10, currentPage: p }">
+    <div class="photos__box" *ngFor="let photo of filteredPhotos">
       <img [src]="photo.url" alt="photo">
       <p class="photos__box__title" [routerLink]="[photo.id]" [queryParams]="{search:searchTerm}">{{ photo.title |
         truncate:"20" }}</p>
     </div>
   </div>
 
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 </div>
 

@@ -14,7 +14,7 @@
   </div>
 
   <div class="albums">
-    <div class="albums__box" *ngFor="let album of filteredAlbums | paginate: { itemsPerPage: 10, currentPage: p }">
+    <div class="albums__box" *ngFor="let album of filteredAlbums">
       <div class="albums__box__header link" (click)="goToAlbum(album)">{{ album.title | truncate:"20" }}</div>
       <div class="albums__box__content">
         <app-photos [albumId]="album.id"></app-photos>
@@ -25,7 +25,6 @@
     </div>
   </div>
 
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 </div>
 

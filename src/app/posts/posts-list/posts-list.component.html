@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let post of filteredPosts | paginate: { itemsPerPage: 10, currentPage: p }">
+      <tr *ngFor="let post of filteredPosts">
         <th>{{ post.id }}</th>
         <td class="link" (click)="goToUser(post.userId)">User {{ post.userId }}</td>
         <td class="link" [routerLink]="[post.id]" [queryParams]="{search: searchTerm}">{{ post.title }}</td>
@@ -33,7 +33,6 @@
     </tbody>
   </table>
 
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 </div>
 

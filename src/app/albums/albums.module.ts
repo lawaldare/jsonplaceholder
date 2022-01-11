@@ -8,7 +8,7 @@ import { SingleAlbumComponent } from './single-album/single-album.component';
 import { FormsModule } from '@angular/forms';
 
 
-import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
+// import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 
 
 
@@ -26,7 +26,6 @@ import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
     AlbumsRoutingModule,
     SharedModule,
     FormsModule,
-    NgxPaginationModule
   ]
 })
 export class AlbumsModule { }

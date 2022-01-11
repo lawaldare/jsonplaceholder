@@ -7,7 +7,6 @@ import { PostsListComponent } from './posts-list/posts-list.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { FormsModule } from '@angular/forms';
 
-import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 
 
 
@@ -21,7 +20,6 @@ import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
     PostsRoutingModule,
     SharedModule,
     FormsModule,
-    NgxPaginationModule
   ]
 })
 export class PostsModule { }
