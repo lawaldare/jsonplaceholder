@@ -58,7 +58,6 @@ export class PostsListComponent implements OnInit, OnDestroy {
       this.loading = false;
       this.posts = data;
       this.performFilter(this.searchTerm);
-      console.log(data);
     }, error => {
       this.loading = false;
       console.log(error);

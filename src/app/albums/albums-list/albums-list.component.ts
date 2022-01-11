@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Album } from 'src/app/data.model';
 import { DataService } from 'src/app/data.service';
-import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 
 
 @Component({
